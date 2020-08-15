@@ -1,3 +1,5 @@
+import api.network.responses.ReedJobObject
+import java.time.LocalDateTime
 import java.util.*
 
 data class JobObject(
@@ -10,7 +12,12 @@ data class JobObject(
         var dateApplied : String? = null
 ){
 
-    override fun toString(): String {
-        return super.toString()
-    }
+    constructor(job: ReedJobObject): this(
+            jobId = job.jobId.toString(),
+            website = job.jobUrl,
+            jobTitle = job.jobTitle,
+            location = job.locationName,
+            company = job.employerName,
+            dateApplied = LocalDateTime.now().toString()
+    )
 }

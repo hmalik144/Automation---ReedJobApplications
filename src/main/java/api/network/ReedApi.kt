@@ -14,11 +14,21 @@ import retrofit2.http.Query
 
 interface ReedApi {
 
-    //get the game data from api call of relevent gameID
+    //get the job data from api call to Reed api data service
     @GET("search")
-    suspend fun getGameData(@Query("keywords") keywords: String,
+    suspend fun getReedData(@Query("keywords") keywords: String,
+                            @Query("minimumSalary") minimumSalary: String) : Response<ReedResponse>
+
+    @GET("search")
+    suspend fun getReedData(@Query("keywords") keywords: String,
                             @Query("locationName") locationName: String,
                             @Query("minimumSalary") minimumSalary: String) : Response<ReedResponse>
+
+    @GET("search")
+    suspend fun getReedData(@Query("keywords") keywords: String,
+                            @Query("locationName") locationName: String,
+                            @Query("minimumSalary") minimumSalary: String,
+                            @Query("resultsToSkip") resultToSkip: Int) : Response<ReedResponse>
 
     //instantiate api class
     companion object{
