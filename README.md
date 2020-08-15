@@ -12,7 +12,7 @@ git@github.com:hmalik144/Automation---ReedJobApplications.git
 
 ## Usage
 
-Create a file "Constants.kt" in the java root
+Create a file "Constants.kt" in the java directory
 ```kotlin
 class Constants {
     companion object{
