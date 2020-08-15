@@ -1,6 +1,7 @@
 # Automated Reed Job Applicator
 
-Foobar is a Python library for dealing with word pluralization.
+Automated job applicator for reed.co.uk. 
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6641371664535826432" height="528" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 ## Installation
 
